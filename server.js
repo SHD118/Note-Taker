@@ -3,7 +3,7 @@ const path = require('path');
 const htmlRouter = require('./route/html')
 const apiRouter = require('./route/api');
 
-const PORT = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 
 const app = express();
 
@@ -17,11 +17,6 @@ app.use('/', htmlRouter);
 
 
 
-
-
-
-
-
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
+app.listen(port, () =>
+  console.log(`App listening at http://localhost:${port} 🚀`)
 );
