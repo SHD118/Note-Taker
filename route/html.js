@@ -2,8 +2,6 @@ const router = require("express").Router();
 const path = require("path")
 
 
-
-
 // GET Route for feedback page
 router.get('/notes', (req, res) => {
     console.log(path.join(__dirname, '../public/notes.html'))
